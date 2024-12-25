@@ -1,41 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do App</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>To-Do App</h1>
-    <script>
-        class Person {
-            constructor(name, age) {
-                this.name = name;
-                this.age = age;
-            }
+	<!-- the entire body must be written by student -->
+    <script type="text/javascript" src="./script.js">
+</script>
 
-            greet() {
-                console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`);
-            }
-        }
-
-        class Employee extends Person {
-            constructor(name, age, jobTitle) {
-                super(name, age);
-                this.jobTitle = jobTitle;
-            }
-
-            jobGreet() {
-                console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`);
-            }
-        }
-
-        // Example usage of Person and Employee
-        const person = new Person("Alice", 25);
-        person.greet();
-
-        const employee = new Employee("Bob", 30, "Manager");
-        employee.jobGreet();
-    </script>
 </body>
+
 </html>
