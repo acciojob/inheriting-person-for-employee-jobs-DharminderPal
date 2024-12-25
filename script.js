@@ -1,4 +1,4 @@
-// Person class definition
+// models.js
 class Person {
     constructor(name, age) {
         this.name = name;
@@ -10,10 +10,9 @@ class Person {
     }
 }
 
-// Employee class definition that extends Person
 class Employee extends Person {
     constructor(name, age, jobTitle) {
-        super(name, age); // Call the constructor of the Person class
+        super(name, age);
         this.jobTitle = jobTitle;
     }
 
@@ -22,9 +21,5 @@ class Employee extends Person {
     }
 }
 
-// Example usage
-const person = new Person("Alice", 25);
-person.greet(); // Expected output: Hello, my name is Alice, I am 25 years old.
-
-const employee = new Employee("Bob", 30, "Manager");
-employee.jobGreet(); // Expected output: Hello, my name is Bob, I am 30 years old, and my job title is Manager.
+// Export the classes
+export { Person, Employee };
