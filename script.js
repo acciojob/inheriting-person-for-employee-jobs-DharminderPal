@@ -1,4 +1,4 @@
-// Person class
+// Person class definition
 class Person {
     constructor(name, age) {
         this.name = name;
@@ -10,14 +10,10 @@ class Person {
     }
 }
 
-// Create a new instance of the Person class
-let access = new Person("Dharminder", 38);  // Corrected the arguments for age and name.
-access.greet();
-
-// Employee class extending Person
+// Employee class definition that extends Person
 class Employee extends Person {
     constructor(name, age, jobTitle) {
-        super(name, age); // Calls the constructor of Person class
+        super(name, age); // Call the constructor of the Person class
         this.jobTitle = jobTitle;
     }
 
@@ -26,6 +22,9 @@ class Employee extends Person {
     }
 }
 
-// Create an instance of Employee class
-let some = new Employee("Dharminder", 25, "Software Developer");
-some.jobGreet();
+// Example usage
+const person = new Person("Alice", 25);
+person.greet(); // Expected output: Hello, my name is Alice, I am 25 years old.
+
+const employee = new Employee("Bob", 30, "Manager");
+employee.jobGreet(); // Expected output: Hello, my name is Bob, I am 30 years old, and my job title is Manager.
